@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>This is Our Anagram Checker</h1>
+  <p>Type a word below to find its anagrams</p>
+ 
+  <form id="anagram" action="/" method="post">
+    <input type="text" name="word">
+    <input type="submit" name="Search!">
+  </form>
+ 
+  <% if @anagrams  %>
+    <ul>
+      <% @anagrams.each do |w| %>
+        <li><%= w.word %></li>
+      <% end %>
+    </ul>
+    <% end %>
+</div>
