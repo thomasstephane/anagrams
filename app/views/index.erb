@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>This is Our Anagram Checker</h1>
+  <h1>Welcome to Anagram Checker</h1>
   <p>Type a word below to find its anagrams</p>
  
   <form id="anagram" action="/" method="post">
@@ -7,11 +7,14 @@
     <input type="submit" name="Search!">
   </form>
  
-  <% if @anagrams  %>
-    <ul>
-      <% @anagrams.each do |w| %>
-        <li><%= w.word %></li>
-      <% end %>
-    </ul>
+    <% if @anagrams  %>
+      <div class="results">
+        <h3>Your anagrams:</h3>
+        <ul>
+          <% @anagrams.each do |w| %>
+            <li><%= w.word.capitalize %></li>
+          <% end %>
+        </ul>
+      </div>
     <% end %>
 </div>

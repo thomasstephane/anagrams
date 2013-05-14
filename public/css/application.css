@@ -1,9 +1,78 @@
+* {
+font-family: 'Lato', Helvetica, Arial, sans-serif;
+font-weight: 300;
+text-align: center;
+font-size: 20px;
+}
+
+body {
+  background: url('../grid6.jpg');
+}
+
 .container {
-  margin: 20px auto;
+  margin: 72px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  border: 1px solid #00467c;
+  border-radius: 15px;
+  background-color: #eee;
+  color: #00467c;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.25),  -1px -1px 3px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.25),  -1px -1px 3px rgba(0,0,0,0.25);
 }
+
 th {
-  text-align: left;
+  text-align: center;
+}
+
+input[type="submit"], button {
+  -webkit-box-align: center;
+  text-align: center;
+  cursor: default;
+  color: #00467c;
+  padding: 2px 6px 3px;
+  border: 1px solid #00467c;
+  background-color: #eee;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.25),  -1px -1px 3px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.25),  -1px -1px 3px rgba(0,0,0,0.25);
+}
+
+input[type="submit"]:hover, button:hover {
+  box-shadow: 1px 1px 3px rgba(0,70,124,0.5),  -1px -1px 3px rgba(0,70,124,0.5);
+  -webkit-box-shadow: 1px 1px 3px rgba(0,70,124,0.5),  -1px -1px 3px rgba(0,70,124,0.5);
+}
+
+input, input[type="password"], input[type="search"], isindex {
+  -webkit-appearance: textfield;
+  padding: 1px;
+  background-color: #eee;
+  border: 1px solid #00467c;
+  -webkit-rtl-ordering: logical;
+  -webkit-user-select: text;
+  cursor: auto;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.25) inset,  -1px -1px 3px rgba(0,0,0,0.25) inset;
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.25) inset,  -1px -1px 3px rgba(0,0,0,0.25) inset;
+  border-radius: 4px;
+  outline: none;
+}
+ input:hover {
+  box-shadow: 1px 1px 3px rgba(0,70,124,0.5) inset,  -1px -1px 3px rgba(0,70,124,0.5) inset;
+  -webkit-box-shadow: 1px 1px 3px rgba(0,70,124,0.5) inset,  -1px -1px 3px rgba(0,70,124,0.5) inset;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 22px;
+  -webkit-padding-start: 0px;
+}
+.results {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px dotted #00467c; 
+}
+.results h3{
+  font-size: 26px;
+  -webkit-margin-before: 12px;
+  -webkit-margin-after: 12px;
+
 }
