@@ -5,6 +5,7 @@ get '/' do
 end
  
 post '/' do
+  @anagrams = []
   content_type :json
   input = params[:word]
   @anagrams = Word.anagrams(input)
